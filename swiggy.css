@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+    height: 100vh;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+    padding: 8px 50px;
+    box-shadow: 0 0 20px rgb(230, 230, 230);
+    position: relative;
+}
+.navbar .swiggy-logo{
+    width: 3.5%;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.other-items{
+    display: none;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 10px;
+    margin-left: -220px;
+    font-weight: bold;
+}
+.other-items>i:nth-child(1){
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 50%;
+}
+.navbar .swiggy-logo:hover{
+    transform: scale(1.15);
+}
+.loction-place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.nav-items:hover{
+    color: orangered;
+}
+.login-side-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 38%;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: 0.5s all;
+    transform: translateX(101%);
+}
+.corss-icon i, .corss-icon-for-place-search i{
+    font-size: 1.2rem;
+    margin: 20px 0 0;
+    cursor: pointer;
+}
+.login-name-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 35px;
+}
+.login-name h1{
+    margin-bottom: 8px;
+}
+.login-name p{
+    font-size: 0.8rem;
+}
+.login-name p a{
+    text-decoration: none;
+    color: orangered;
+}
+.login-img{
+    width: 28%;
+}
+.login-img img{
+    width: 100%;
+}
+.mobile-input,.login-button{
+    width: 70%;
+}
+.mobile-input input{
+   width: 100%;
+   padding: 20px 10px;
+   margin-bottom: 25px;
+}
+.login-button button{
+    width: 100%;
+    padding: 18px 10px;
+    margin-bottom: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    outline: none;
+ }
+ .login-button p{
+    font-size: 0.8rem;
+ }
+ .place-search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 38%;
+    height: 100vh;
+    padding: 40px;
+    padding-left: 150px;
+    z-index: 1;
+    transition: 0.5s all;
+    transform: translateX(-101%);
+ }
+.place-input input{
+   width: 100%;
+   padding: 20px 10px;
+   margin: 25px 0;
+   border: 1px solid rgb(210, 210, 210);
+   border-radius: 5px;
+}
+.gps-location,.recent-search{
+    width: 100%;
+    padding: 25px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.location-para>p:nth-child(2){
+    font-size: 0.8rem;
+    margin-top: 8px;
+    color: rgb(163, 163, 163);
+}
+.recent-search-top p{
+    font-size: 0.7rem;
+}
+.recent-search-down{
+    display: flex;
+    margin-top: 15px;
+    align-items: start;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.gps-location-top{
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.gps-location-top:hover,.recent-search-down:hover{
+    color: orangered;
+}
+.food-items,.top-restarents{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 230px;
+    padding: 10px 0;
+}
+.food-items-top,.top-restarents-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.food-items-top h1,.top-restarents-top h1{
+    font-size: 1.6rem;
+}
+.food-items-down,.top-restarents-down{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 23px 0;
+}
+.food-items-down::-webkit-scrollbar,.top-restarents-down::-webkit-scrollbar{
+    display: none;
+}
+.food-card img{
+    width: 140px;
+    mix-blend-mode: multiply;
+}
+.top-restarents-card img{
+    width: 280px;
+    height: 190px;
+    border-radius: 15px;
+}
+.top-restarents-item-name{
+    margin: 10px 0 5px;
+    padding-left: 15px;
+}
+.rating-and-time{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+.top-restarent-place{
+    padding-left: 15px;
+    color: grey;
+}
+.top-restarent-place p{
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width:576px) {
+    .navbar{
+        width: 100%;
+    }
+    .navbar .swiggy-logo{
+        display: none;
+    }
+    .loction-place{
+        display:none;
+    }
+    .nav-items{
+        display: none;
+    }
+    .other-items{
+        display: flex;
+    }
+    .place-search,.login-side-menu{
+        display: none;
+    }
+    .food-items-top h1{
+        display: none;
+    }
+    .food-items,.top-restarents{
+        margin: 0;
+        padding: 0 15px;
+    }
+    .top-restarents-top{
+        padding-top: 15px;
+    }
+    .food-items-down{
+        padding: 0;
+    }
+    .food-card img{
+       width: 100px;
+    }
+    .top-restarents-down{
+        padding: 10px 0;
+    }
+    .top-restarents-card img{
+        width: 120px;
+        height: 100px;
+    }
+    .top-restarents-item-name{
+        margin: 5px 0 ;
+        padding-left: 5px;
+
+    }
+    .top-restarents-item-name h4{
+        font-size: 0.9rem;
+    }
+    .rating-and-time{
+        font-size: 0.7rem;
+        padding-left:5px ;
+    }
+    .top-restarent-place{
+        padding-left: 5px;
+        color: grey;
+    }
+    .top-restarent-place p{
+        font-size: 0.9rem;
+    }
+}
