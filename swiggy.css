@@ -285,9 +285,8 @@ body{
     margin-top: 15px;
     flex-wrap: wrap;  
     overflow: none;   
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 20px;
-
 }
 .filter-options{
     display: flex;
@@ -311,6 +310,7 @@ body{
     font-size: 0.8rem;
     margin-top: 10px;
     box-shadow: 0 0 5px rgb(213, 213, 213);
+    
 }
 .footer-links{
     width: 100%;
@@ -377,40 +377,31 @@ body{
     .navbar{
         width: 100%;
     }
-    .navbar .swiggy-logo{
-        display: none;
-    }
-    .loction-place{
-        display:none;
-    }
-    .nav-items{
+    .navbar .swiggy-logo,.nav-items,.loction-place,.food-items-top h1,.place-search,.login-side-menu{
         display: none;
     }
     .other-items{
         display: flex;
     }
-    .place-search,.login-side-menu{
-        display: none;
-    }
-    .food-items-top h1{
-        display: none;
-    }
     .food-items,.top-restarents,.top-restarents-onine-food-delivery{
         margin: 0;
-        padding: 0 15px;
+        padding: 0 10px;
     }
     .top-restarents-onine-food-delivery-top h1{
         margin-top: 15px;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .top-restarents-top{
         padding-top: 15px;
+    }
+    .food-items-top{
+        padding: 0;
     }
     .food-items-down{
         padding: 0;
     }
     .food-card img{
-       width: 100px;
+       width: 90px;
     }
     .top-restarents-down{
         padding: 10px 0;
@@ -441,7 +432,15 @@ body{
     .footer-links{
         display: none;
     }
+    .filter-options-button p{
+        width: 80px;
+    }
     .footer-links-small-screen{
         display: flex;
+    }
+    .top-restarents-card img{
+        width: 160px;
+        height: 140px;
+        border-radius: 15px;
     }
 }
