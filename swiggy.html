@@ -8,7 +8,7 @@
     <title>Swiggy-Clone</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-js">
         <img class="swiggy-logo" src="img/swiggy-logo.avif" alt="">
         <div class="other-items">
             <i class="fa-solid fa-arrow-left"></i>
@@ -24,7 +24,7 @@
             <i class="fa-solid fa-bag-shopping"></i>
             <p>Swiggy Corporate</p>
         </div>
-        <div class="nav-items">
+        <div class="nav-items search-page">
             <i class="fa-solid fa-magnifying-glass"></i>
             <p>Search</p>
         </div>
@@ -96,43 +96,80 @@
             </div>
         </div>
     </nav>
-    <section class="food-items">
+    <div class="search-option">
+        <div class="close-icon">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="Search For Resturents And Food">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="popular-items">
+            <div class="popular-items-name">
+                <h3>Popular Cuisines</h3>
+            </div>
+            <div class="popular-items-search-img">
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-1.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-2.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-23.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-4.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-5.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                   <a href="#"> <img src="img/search-img-16avif.avif" alt=""></a>
+                </div>
+                <div class="popular-item-img">
+                    <a href="#"><img src="img/search-img-7.avif" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="food-items food-items-js">
         <div class="food-items-top">
             <h1>What's on your mind?</h1>
         </div>
         <div class="food-items-down">
             <div class="food-card">
-                <img src="img/nav-down-slide-img-1.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-1.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-2.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-2.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-3.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-3.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-4.avif" alt="">
+               <a href="#"> <img src="img/nav-down-slide-img-4.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-5.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-5.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-6.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-6.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-7.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-7.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-8.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-8.avif" alt=""></a>
             </div>
             <div class="food-card">
-                <img src="img/nav-down-slide-img-9.avif" alt="">
+                <a href="#"><img src="img/nav-down-slide-img-9.avif" alt=""></a>
             </div>
         </div>
         <hr>
     </section>
 
-    <section class="top-restarents">
+    <section class="top-restarents top-restarents-js">
         <div class="top-restarents-top">
             <h1>Top restarents</h1>
         </div>
@@ -323,12 +360,43 @@
         <hr>
     </section>
 
-    <section class="top-restarents">
-        <div class="top-restarents-top">
-            <h1>Top restarents</h1>
+    <section class="top-restarents-onine-food-delivery top-restarents-onine-food-delivery-js">
+        <div class="top-restarents-onine-food-delivery-top">
+            <h1>Top restarents With Online Food Delivery in Hyderabad</h1>
         </div>
-        <div class="top-restarents-down">
-            <div class="top-restarents-card">
+        <div class="filter-options">
+            <button class="filter-options-button">
+                <p>Filter</p>
+                <i class="fa-solid fa-filter"></i>
+            </button>
+            <button class="filter-options-button">
+                <p>Sort By</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <button class="filter-options-button">
+                <p>Fast Delivery</p>
+            </button>
+            <button class="filter-options-button">
+                <p>New On Swiggy</p>
+            </button>
+            <button class="filter-options-button">
+                <p>Ratings 4.0+</p>
+            </button>
+            <button class="filter-options-button">
+                <p>Pure Veg</p>
+            </button>
+            <button class="filter-options-button">
+                <p>Offers</p>
+            </button>
+            <button class="filter-options-button">
+                <p>Rs 300-600</p>
+            </button>
+            <button class="filter-options-button">
+                <p>Less Than 300</p>
+            </button>
+        </div>
+        <div class="top-restarents-onine-food-delivery-down">
+            <div class="top-restarents-card top-restarents-card-1">
                 <img src="img/div1-card-img-1.avif" alt="">
                 <div class="top-restarents-item-name">
                     <h4>Pizza Hut</h4>
@@ -401,7 +469,7 @@
             <div class="top-restarents-card">
                 <img src="img/div1-card-img-6.avif" alt="">
                 <div class="top-restarents-item-name">
-                    <h4>Zaha Mughal Biryani</h4>
+                    <h4>Mughal Biryani</h4>
                 </div>
                 <div class="rating-and-time">
                     <i class="fa-solid fa-star"></i>
@@ -496,406 +564,83 @@
                     <p>Nallakunta</p>
                 </div>
             </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-1.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
         </div>
         <hr>
     </section>
-
-    <section class="top-restarents">
-        <div class="top-restarents-top">
-            <h1>Top restarents</h1>
+    <footer class="footer-links">
+        <div class="footer-links-top">
+            <h1 style="text-transform: capitalize;">For better experience download swiggy app now</h1>
+            <img src="img/play_store.avif" alt="">
+            <img src="img/app_store.avif" alt="">
         </div>
-        <div class="top-restarents-down">
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-1.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
+        <div class="footer-links-down">
+            <div class="swiggy-foot">
+                <img src="img/swiggy-footer.png" alt="">
             </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-2.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Domino's Pizza</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 25-30mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas,Italian</p>
-                    <p>Himayath Nagar</p>
-                </div>
+            <div class="footer-links-down-cards">
+                <ul>
+                    <li>Company</li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Swiggy Coperate</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Swiggy One</a></li>
+                    <li><a href="#">Swiggy Instamart</a></li>
+                    <li><a href="#">Swiggy Dineout</a></li>
+                    <li><a href="#">Swiggy Genie</a></li>
+                </ul>
             </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-3.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Burger King</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 25-30mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
+            <div class="footer-links-down-cards">
+                <ul>
+                    <li>Contact Us</li>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Ride With Us</a></li>
+                </ul>
+                <ul style="margin-top: 50px;">
+                    <li>Legal</li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
             </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-4.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>McDonald's</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.4 &middot; 20-25mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Burgers</p>
-                    <p>Himayath Nagar</p>
-                </div>
+            <div class="footer-links-down-cards">
+                <ul>
+                    <li>Available In:</li>
+                    <li><a href="#">Bangalore</a></li>
+                    <li><a href="#">Gurgaon</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">697 Cities</a></li>
+                </ul>
             </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-5.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>KFC</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 20-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Burgers,Fast Food</p>
-                    <p>Himayath Nagar</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-6.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Zaha Mughal Biryani</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-7.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-8.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-8.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-10.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-11.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-12.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-1.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
+            <div class="footer-links-down-cards">
+                <ul>
+                    <li>Life At Swiggy</li>
+                    <li><a href="#">Explore With Swiggy</a></li>
+                    <li><a href="#">Swiggy News</a></li>
+                    <li><a href="#">Snackables</a></li>
+                </ul>
+                <ul style="margin-top: 50px; display: flex; flex-direction: row;">
+                    <li>Social Media Links</li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
             </div>
         </div>
-        <hr>
-    </section>
-
-    <section class="top-restarents">
-        <div class="top-restarents-top">
-            <h1>Top restarents</h1>
-        </div>
-        <div class="top-restarents-down">
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-1.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-2.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Domino's Pizza</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 25-30mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas,Italian</p>
-                    <p>Himayath Nagar</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-3.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Burger King</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 25-30mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-4.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>McDonald's</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.4 &middot; 20-25mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Burgers</p>
-                    <p>Himayath Nagar</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-5.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>KFC</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 20-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Burgers,Fast Food</p>
-                    <p>Himayath Nagar</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-6.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Zaha Mughal Biryani</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-7.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-8.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-8.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-10.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-11.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-12.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-            <div class="top-restarents-card">
-                <img src="img/div1-card-img-1.avif" alt="">
-                <div class="top-restarents-item-name">
-                    <h4>Pizza Hut</h4>
-                </div>
-                <div class="rating-and-time">
-                    <i class="fa-solid fa-star"></i>
-                    <p>4.3 &middot; 30-35mins</p>
-                </div>
-                <div class="top-restarent-place">
-                    <p>Pizzas</p>
-                    <p>Nallakunta</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
+    </footer>
+    <footer class="footer-links-small-screen">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-bowl-food"></i>
+        <i class="fa-solid fa-carrot"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </footer>
     <script src="swiggy.js"></script>
 </body>
 </html>
