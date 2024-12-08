@@ -175,10 +175,49 @@ body{
 .gps-location-top:hover,.recent-search-down:hover{
     color: orangered;
 }
+.search-option{
+    padding: 5px;
+    margin: 0 300px;
+    margin-top: 10px;
+    height: 100vh;
+    display: none;
+}
+.close-icon{
+    font-size: 1.2rem;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.search-input{
+    position: relative;
+    margin-bottom: 35px;
+
+}
+.search-input input{
+    width: 100%;
+    padding: 15px 10px;
+}
+.search-input i{
+    position: absolute;
+    top: 40%;
+    right: 1.5%;
+}
+.popular-items-name{
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.popular-items-search-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.popular-item-img img{
+    width: 80px;
+    mix-blend-mode: multiply;
+}
 .food-items,.top-restarents{
     display: flex;
     flex-direction: column;
-    margin: 15px 230px;
+    margin: 15px 210px;
     padding: 10px 0;
 }
 .food-items-top,.top-restarents-top{
@@ -205,9 +244,16 @@ body{
     width: 140px;
     mix-blend-mode: multiply;
 }
+.top-restarents-card{
+    cursor: pointer;
+    transition: ease-in 0.15s;
+}
+.top-restarents-card:hover{
+    transform: scale(0.9);
+}
 .top-restarents-card img{
-    width: 280px;
-    height: 190px;
+    width: 260px;
+    height: 180px;
     border-radius: 15px;
 }
 .top-restarents-item-name{
@@ -228,7 +274,105 @@ body{
 .top-restarent-place p{
     font-size: 0.9rem;
 }
+.top-restarents-onine-food-delivery{
+    margin: 15px 210px;
+    margin-bottom: 25px;
+}
+.top-restarents-onine-food-delivery-down{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
+    flex-wrap: wrap;  
+    overflow: none;   
+    justify-content: center;
+    padding-bottom: 20px;
 
+}
+.filter-options{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 0;
+    overflow-x:auto ;
+}
+.filter-options::-webkit-scrollbar{
+    display: none;
+}
+.filter-options-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(190, 190, 190);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgb(213, 213, 213);
+}
+.footer-links{
+    width: 100%;
+    background-color: rgb(240, 240, 245);
+    padding: 30px 210px;
+}
+.footer-links-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-links-top h1{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.footer-links-top img{
+    width: 200px;
+    cursor: pointer;
+}
+.footer-links-down{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+.footer-links-down-cards ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-links-down-cards li:nth-child(1){
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.footer-links-down-cards a{
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+
+}
+.footer-links-small-screen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:18px 50px;
+    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    display: none;
+}
+.footer-links-small-screen>i:nth-child(2){
+    color: orangered;
+}
+.footer-links-small-screen i{
+    font-size: 1.5rem;
+}
 @media only screen and (max-width:576px) {
     .navbar{
         width: 100%;
@@ -251,9 +395,13 @@ body{
     .food-items-top h1{
         display: none;
     }
-    .food-items,.top-restarents{
+    .food-items,.top-restarents,.top-restarents-onine-food-delivery{
         margin: 0;
         padding: 0 15px;
+    }
+    .top-restarents-onine-food-delivery-top h1{
+        margin-top: 15px;
+        font-size: 0.7rem;
     }
     .top-restarents-top{
         padding-top: 15px;
@@ -289,5 +437,11 @@ body{
     }
     .top-restarent-place p{
         font-size: 0.9rem;
+    }
+    .footer-links{
+        display: none;
+    }
+    .footer-links-small-screen{
+        display: flex;
     }
 }
